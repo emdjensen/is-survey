@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900');
+
+* {
+	font-family:'Source Sans Pro', sans-serif;
+	}
+	
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:900;
+	}
+	
+body {
+	background:darkgray;
+	/*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+	}
+	
+.content {
+	overflow: auto;
+  	position: relative;
+  	}
+
+.content:before {
+  	/*content: "";
+  	position: fixed;
+  	left: 0;
+  	right: 0;
+  	z-index: -1;
+
+  	display: block;
+  	background-image: url('http://smashstarmedia.com/apps/is-survey/css/waveform.png');
+  	width: 110%;
+  	height: 110%;
+
+  	-webkit-filter: blur(5px);
+  	-moz-filter: blur(5px);
+  	-o-filter: blur(5px);
+  	-ms-filter: blur(5px);
+  	filter: blur(5px);
+  	
+  	top:-5%;
+  	left:-5%;*/
+}
+
+  	
+.survey {
+	max-width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	background:white;
+	border:solid gray 1px;
+	border-radius:15px;
+	padding:15px 20px;
+	box-shadow:#444 0px 0px 60px;
+	}
+	
+.legal {
+	font-size:12px;
+	font-weight:200;
+	text-align:justify;
+	}
+	
+.button {
+	font-weight:700;
+	font-size:1.2em;
+	padding:20px;
+	}
+	
+.alert {
+	text-align:center;
+	color:red;
+	width:100%;
+	}
+	
+.button, input[type="submit"] {
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:900;
+	padding:10px 25px;
+	}
