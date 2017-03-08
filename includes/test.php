@@ -48,3 +48,26 @@ function test_next_step($step) {
 
     return isset($steps[$step]) ? $steps[$step] : null;
 }
+
+function test_get_results() {
+    $sessions = array_filter(scandir(SESSIONS_DIR), function ($file) {
+        // Filter out all files that start with a .
+        return preg_match('/^\w+$/', $file);
+    });
+
+    $results = [];
+    foreach ($sessions as $session_id) {
+        $session_data = session_data_get($session_id);
+
+        if (empty($session_data['answers'])) {
+            continue;
+        }
+
+        $results[$session_id] = array_filter($session_data['answers'], function ($answer) {
+            // Remove any pages with no answers (main and consent).
+            return !empty($answer);
+        });
+    }
+
+    return $results;
+}
