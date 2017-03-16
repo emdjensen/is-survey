@@ -1,5 +1,6 @@
-<h1>Survery complete!</h1>
-<h3>Thank you for your time. Your survery results have been recorded.</h3>
+<h1>That's It!</h1>
+<p>Your answers have been submitted.  We apprecaite you taking the time to assist us with our research.  We remind you that all submissions will be pooled together and IP addresses/other identifiable information from your browser or device will be removed from the database and discarded before the data is exported and analyzed.</p>
+<p></br></p>
 
 <!-- Debug Info
 <?php print_r(fsu\session_data_get(fsu\session_get_id())); ?>

@@ -4,15 +4,15 @@
     <input type="hidden" name="step" value="page7">
 
     <label>Month of birthdate</label>
-    <input type="number" name="DEM-M" value="" min="1" max="12" required><label for="DEM-M"></label>
+    <input type="number" name="DEM-M" value="" min="1" max="12" placeholder="1-12" required><label for="DEM-M"></label>
                     
     <label>Day of birthdate</label>
-    <input type="number" name="DEM-D" value="" min="1" max="31" required><label for="DEM-D"></label>
+    <input type="number" name="DEM-D" value="" min="1" max="31" placeholder="1-31" required><label for="DEM-D"></label>
                     
     <label>Year of birthdate</label>
-    <input type="number" name="DEM-Y" value="" min="1950" max="2005" placeholder="1996" required><label for="DEM-Y"></label>
+    <input type="number" name="DEM-Y" value="" min="1900" max="2005" placeholder="ex: 1996" required><label for="DEM-Y"></label>
                     
-    <label>Sex</label>
+    <label>Gender</label>
     <input type="radio" name="DEM-S" value="1" required><label for="DEM-S">Male</label>
     <input type="radio" name="DEM-S" value="2" required><label for="DEM-S">Female</label>
     <input type="radio" name="DEM-S" value="3" required><label for="DEM-S">Other</label>
